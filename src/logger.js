@@ -47,6 +47,15 @@ class Logger extends EventEmitter {
     }
 
     /**
+     * Logs verbose messages
+     *
+     * @param message
+     */
+    verbose(message) {
+
+    }
+
+    /**
      * Logs messages
      *
      * @param message

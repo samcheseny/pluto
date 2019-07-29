@@ -1,10 +1,10 @@
 {
   "name": "pluto",
   "version": "1.0.0",
-  "description": "A lightweight asynchronous logger for NodeJS logger",
-  "main": "index.js",
+  "description": "A lightweight asynchronous logger for NodeJS",
+  "main": "src/index.js",
   "scripts": {
-    "start":"node src/index.js",
+    "start": "node src/index.js",
     "test": "jest --forceExit"
   },
   "jest": {
