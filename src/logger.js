@@ -56,11 +56,22 @@ class Logger extends EventEmitter {
     }
 
     /**
-     * Logs messages
+     * Logs emergency messages
      *
      * @param message
      */
-    log(message) {
+    emergency(message) {
+
+    }
+
+    /**
+     * Logs messages
+     *
+     * @param message
+     * @param logLevel
+     * @param timestamp
+     */
+    log(message, logLevel, timestamp) {
 
     }
 

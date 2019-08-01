@@ -27,9 +27,9 @@ describe('Utilities', () => {
 
             let datetime = Utilities.getCurrentDateTime();
 
-            let currentDate = new Date();
+            let currentDate = new Date().getTime();
 
-            expect(new Date(datetime)).toBeLessThanOrEqual(currentDate);
+            expect(new Date(datetime).getTime()).toBeLessThanOrEqual(currentDate);
 
         });
 

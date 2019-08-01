@@ -70,7 +70,20 @@ describe('Logger', () => {
 
         test('should accept string message', () => {
 
-            log.verbose("Some verbose");
+            log.verbose("Some verbose info");
+
+            expect(true).toEqual(true);
+
+        });
+
+    });
+
+    //Test verbose method
+    describe('emergency', () => {
+
+        test('should accept string message', () => {
+
+            log.emergency("Some emergency");
 
             expect(true).toEqual(true);
 
@@ -81,9 +94,13 @@ describe('Logger', () => {
     //Test log method
     describe('log', () => {
 
+        let logLevel = "info";
+
+        let timestamp = "1-8-2019 12:12:12";
+
         test('should accept string message', () => {
 
-            log.log("Some log");
+            log.log("Some log", logLevel, timestamp);
 
             expect(true).toEqual(true);
 
@@ -94,7 +111,7 @@ describe('Logger', () => {
             //Todo: add config arg to constructor with fake file path
             log = new Logger();
 
-            expect(log.log("Some log")).toThrow();
+            expect(log.log("Some log", logLevel, timestamp)).toThrow();
 
         });
 
