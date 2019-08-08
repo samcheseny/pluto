@@ -3,5 +3,5 @@ module.exports = {
     error: 3,
     warning: 4,
     info: 6,
-    debug: 7
+    debug: 7,
 };

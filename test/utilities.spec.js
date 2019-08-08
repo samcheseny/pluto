@@ -94,4 +94,34 @@ describe('Utilities', () => {
 
     });
 
+    describe('isObjectEmpty', () => {
+
+        test('should return true on an empty object ({})', () => {
+
+            let emptyObject = {};
+
+            expect(Utilities.isObjectEmpty(emptyObject)).toBeTruthy();
+
+        });
+
+        test('should return false on a non empty object ', () => {
+
+            let nonEmptyObject = {
+                property: 12
+            };
+
+            expect(Utilities.isObjectEmpty(nonEmptyObject)).toBeTruthy();
+
+        });
+
+    });
+
+    describe('getUsedMemory', () => {
+
+        test('should return a non empty string', () => {
+            expect(Utilities.getUsedMemory().length).toBeGreaterThan(0)
+        });
+
+    });
+
 });
